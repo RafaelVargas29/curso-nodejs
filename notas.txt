@@ -1,1 +1,36 @@
-first commit!
+- O que é NodeJs?
+  > Plataforma open-spurce que permite a execução de Javascript no lado do servidor
+  > É composto de:
+    + v8 - Interpretador de Javascript criado pela google e tem como responsabilidade pegar o código Javascript e mostrar de uma forma que o browser condiga interpretar
+    + libuv - Biblioteca multiplataforma com foco em I/O (entrada/saída) assíncrono
+    + conjunto de módulos
+
+- Características do NodeJs
+  > Arquitetura Event Loop (baseado em eventos)
+    + Call Stack (pilha de funções que estão prontas para serem chamadas)
+    + Funciona no sistema LIFO (Last In Firts Out)
+  > Single - Thread (Escuta uma requisição por vez)
+    + Escuta uma função da Call Stack e manda para uma Thread
+    + Por padrão ele vai ter 4 Threads disponpiveis para serem executadas
+  > Non-blocking I/O (pode executar funções sem que outras sejam finalizadas completamente)
+  > Módulos próprios
+    + http (Pde criar um servidor com esse módulo)
+    + dns
+    + fs (Para trabalhar com arquivos)
+    + buffer
+    + ...
+
+- O que são gerenciadores de pacotes?
+  > NPM e Yarn
+  > Instalam bibliotecas externas
+  > Disponibiliza bibliotecas
+  > Vamos utilizar o Yarn, pois é um pouco mais rápido do que o NPM
+
+- Frameworks
+  > Express (é o que vamos utilizar no curso)
+    + Robusto
+    + Simples
+    + Completo
+  > Egg.js 
+  > Nest.js
+  > Adonis.js
