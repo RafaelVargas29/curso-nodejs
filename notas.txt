@@ -34,3 +34,23 @@
   > Egg.js 
   > Nest.js
   > Adonis.js
+
+- O que é API?
+  > Application Programming Interface (Interface de Progrmação de Aplicativos)
+  > Conjunto de requistos que determina como um aplicativo se comunicará com o outro
+  > Documentação para desenvolver
+
+- O que é REST
+  > Representation State Transfer (Tranferência Representacional de Estado)
+  > É um modelo de arquitetura
+  > 6 Regras:
+    + 1 - Client server (de um lado tem o client e do outro tem o server. o cliente não se preocupa com o server)
+    + 2 - Stateless (O client pode realizar quantas requisições quiser para o servidor, mas o server não armazena estados ou seções dessas requisições)
+    + 3 - Cache (A aplicação deve ser contruída de forma que o cache possa ser feito)
+    + 4 - Interface uniforme
+      . Identificação dos recursos (htt://enderecoservidor.com.br/products | htt://enderecoservidor.com.br/clients)
+      . Representação dos recursos (JSon, XML, HTML)
+      . Mensagens auto-descritivas
+      . HATEOAS (Hypertext As The Engine Of Application State) : Significa que podemos retornar links dentro da requisição
+    + 5 - Camadas (Devem existir camadas entre o client e os servers)
+    + 6 - Código sob demanda (Permite que as funcionalidades do client seja estendidas na forma de scripts ou mini aplicativos) 
