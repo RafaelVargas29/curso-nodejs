@@ -48,9 +48,57 @@
     + 2 - Stateless (O client pode realizar quantas requisições quiser para o servidor, mas o server não armazena estados ou seções dessas requisições)
     + 3 - Cache (A aplicação deve ser contruída de forma que o cache possa ser feito)
     + 4 - Interface uniforme
-      . Identificação dos recursos (htt://enderecoservidor.com.br/products | htt://enderecoservidor.com.br/clients)
+      . Identificação dos recursos (http://enderecoservidor.com.br/products | http://enderecoservidor.com.br/clients)
       . Representação dos recursos (JSon, XML, HTML)
       . Mensagens auto-descritivas
       . HATEOAS (Hypertext As The Engine Of Application State) : Significa que podemos retornar links dentro da requisição
     + 5 - Camadas (Devem existir camadas entre o client e os servers)
     + 6 - Código sob demanda (Permite que as funcionalidades do client seja estendidas na forma de scripts ou mini aplicativos) 
+
+- Métodos de requisição - HTTP Verbs
+  > GET - Leitura/Buscar informação
+  > POST - Criação
+  > PUT - Atualização
+  > DELETE - Deleção 
+  > PATCH - Atualização parcial (Atualizar foto de perfil, etc)
+
+- HTTP Codes
+  > 1xx - Códigos começados em 1 são informativos (solicitação aceita ou em andamento)
+  > 2xx - Códigos começados em 2 são de confirmação 
+    + 200 - Requisição bem sucedida
+    + 201 - Created (geralmente usado para POST após uma inserção)
+  > 3xx - Códigos começados em 3 são de redirecionamento
+    + 301 - Moved Permanently (quando algo foi movido permanentemente)
+    + 302 - Moved 
+  > 4xx - Erros do cliente
+    + 400 - Bad request
+    + 401 - Unauthorized (Não foi autorizado)
+    + 403 - Forbiden
+    + 404 - Not found
+    + 422 - Unprocessable entity
+  > 5xx - Erros no servidor (Servidor falhou ao concluir a solicitação)
+    + 500 - Internal server error 
+    + 501 - Bad gateway
+
+- Parêmetros da requisição
+  > Header params (parâmetros que vão no cabeçalho como: tokens, controle de sessão)
+  > Query params 
+    + Parametros inseridos no final da url (http://enderecoservidor.com.br/v1/users?page=&limit=50)
+    + Chave
+    + valor
+    + Separação
+  > Route params 
+    + Parametros que vão no meio da rota (http://enderecoservidor.com.br/users/{id})
+  > Body params 
+    + Parâmetros que vão no corpo da requisição
+
+- Boas práticas de API Rest 
+  > Utilização do mpetodos http 
+  > Utilização correta dos status nos retornos das respostas
+  > Padrão de nomenclatura
+    + Busca de usuário - GET (http://enderecoservidor.com.br/v1/users)
+    + Busca de usuário por id - GET (http://enderecoservidor.com.br/v1/users/1)
+    + Busca do endereço do usuário por id - GET (http://enderecoservidor.com.br/v1/users/1/address)
+    + Deleção de um usuário (http://enderecoservidor.com.br/v1/users/1)
+    + Atualização do status do usuário - PATCH (http://enderecoservidor.com.br/v1/users/1/status)
+
