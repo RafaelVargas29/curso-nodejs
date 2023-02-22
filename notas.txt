@@ -56,11 +56,11 @@
     + 6 - Código sob demanda (Permite que as funcionalidades do client seja estendidas na forma de scripts ou mini aplicativos) 
 
 - Métodos de requisição - HTTP Verbs
-  > GET - Leitura/Buscar informação
-  > POST - Criação
-  > PUT - Atualização
-  > DELETE - Deleção 
-  > PATCH - Atualização parcial (Atualizar foto de perfil, etc)
+  > GET - Leitura/Buscar informação dentro do servidor
+  > POST - Inserir informação noservidor
+  > PUT - Alterar informação no servidor
+  > DELETE - Deletar informações do servidor
+  > PATCH - Atualização parcial (Atualizar foto de perfil, email ,etc)
 
 - HTTP Codes
   > 1xx - Códigos começados em 1 são informativos (solicitação aceita ou em andamento)
