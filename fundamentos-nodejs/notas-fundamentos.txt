@@ -8,9 +8,14 @@
 - ARQUIVOS
   > package.json : Onde se concentram todas as dependências do projeto
 
-
-- EXPRESS
-  > Framework do ecossistema do node  
-  > Auxilia nogerenciamento de rotas 
-  > Auxilia na criação de um servidor para a aplicação
-  > Auxilia na criação de middleweres
+- FERRAMENTAS
+  > Express
+    + Framework do ecossistema do node  
+    + Auxilia nogerenciamento de rotas 
+    + Auxilia na criação de um servidor para a aplicação
+    + Auxilia na criação de middleweres
+  > Nodemon
+    + Ferramenta que auxilia no processo de escuta de alterações na aplicação
+    + Atualiza a aplicação quando há uma alteração
+    + É instalada e usada no ambiente de desenvolvimento
+    + npm add nodemon -D
