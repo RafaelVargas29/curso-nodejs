@@ -1,0 +1,16 @@
+- COMANDOS
+  > yarn init -y / npm init -y : (Cria um package.json com alguns padrôes predefinidos)
+  > code .  : (Abre o vscode)
+  > npm add express : (Adiciona o express à aplicação)
+  > response.send("") : (Permite que envie uma mensagem para quem fez a requisição na rota)
+  > response.json({chave: "valor"}) : (Permite que retorne dados como json)
+
+- ARQUIVOS
+  > package.json : Onde se concentram todas as dependências do projeto
+
+
+- EXPRESS
+  > Framework do ecossistema do node  
+  > Auxilia nogerenciamento de rotas 
+  > Auxilia na criação de um servidor para a aplicação
+  > Auxilia na criação de middleweres
