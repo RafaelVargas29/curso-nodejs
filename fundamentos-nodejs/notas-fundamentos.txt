@@ -19,3 +19,9 @@
     + Atualiza a aplicação quando há uma alteração
     + É instalada e usada no ambiente de desenvolvimento
     + npm add nodemon -D
+
+- PARÂMTEROS
+  > Route params: Parâmetros que são recebidos pela rota para identificar um recurso (id) (é obrigatório)
+  > Query params: Estão na rota também, servem para paginação, filtro de busca (é opcional)
+    + Exemplo de uso (forma manual): http://localhost:3333/courses?page=1&order=asc
+  > Body params: Os objetos que são passados para inserção/alteração de algum recurso (JSON na maior parte das vezes). Deve-se utilizar o middleware 'app.use(express.json());'

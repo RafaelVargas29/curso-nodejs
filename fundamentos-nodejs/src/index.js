@@ -2,18 +2,26 @@ const express = require('express'); // importando o express
 
 const app = express(); // chamando a função do express
 
+app.use(express.json());
+
 // Recebe o path da rota desejada (rota padrão localhost:portaDefinida/rotaDefinida)
 // Recebe uma requisição e uma resposta (request e response)
 app.get("/courses", (request, response) => {
+    const query = request.query;
+    console.log(query);
     return response.json([ "Curso 1", "Curso 2", "Curso 3"]);
 });
 
 app.post("/courses", (request, response) => {
+    const body = request.body;
+    console.log(body);
     return response.json([ "Curso 1", "Curso 2", "Curso 3", "Curso 4"]);
 });
 
 // /:id : significa que a rota espera o parâmetro id do curso que severá ser modificado
 app.put("/courses/:id", (request, response) => {
+    const params = request.params;
+    console.log(params);
     return response.json([ "Curso 6", "Curso 2", "Curso 3", "Curso 4"]); // Alterando curso 1 para curso 6
 });
 
