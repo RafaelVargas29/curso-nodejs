@@ -1,0 +1,3 @@
+- uuid: Identidicador Único Universal
+  + Precisa de uma biblioteca para utilizá-lo (npm add uuid)
+  + A versão utilizada no projeto é a v4, pois ela gera o uuid com números randomicos
