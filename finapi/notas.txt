@@ -4,3 +4,14 @@
   
 - some(): Retorna se algo existe ou não existe
 - find(): Retorna o objeto procurado
+
+- Middleware: Função que fica entre a requisição (request) e a reposta (response)
+  + Utilizado para vários tipos de validação
+  + Para ser uma função Middleware precisa de receber três parâmetros: request, response e next
+    . next: decide se o Middleware vai prosseguir com a operação solicitada ou se vai parar ali
+  + O Middleware pode ser passado antes do (request, response)
+    . Exemplo: app.get("/statement", verifyIfExistsAccountCPF, (request, response){ }) 'verifyIfExistsAccountCPF' é o Middleware e entá como segundo parâmetro
+    . Caso queira passar mais de um Middleware, basta colocar um em sequência do outro
+  + O Middleware pode ser passado antes da seguinte forma: app.use(verifyIfExistsAccountCPF);
+    . Essa forma é utilizada quando há mais de uma rota que vá ultilizar esse Middleware.
+    . Tudo que tiver depois dessa linha de código passará por esse Middleware
