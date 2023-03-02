@@ -5,6 +5,12 @@
 - some(): Retorna se algo existe ou não existe
 - find(): Retorna o objeto procurado
 
+- reduce(): Pega as informações de determinado valor informado e transforma em apenas um valor
+  + Recebe dois parâmetros 
+  + O primeiro se trata do acumulador e o objeto a ser iterado para acumular os valores
+    . Acumulador: Variável que será responsável por armazenar os valores que são removidos e inseridos dentro do objeto
+  + O segundo parâmetro é o valor inicial desse objto que será iterado
+
 - Middleware: Função que fica entre a requisição (request) e a reposta (response)
   + Utilizado para vários tipos de validação
   + Para ser uma função Middleware precisa de receber três parâmetros: request, response e next
