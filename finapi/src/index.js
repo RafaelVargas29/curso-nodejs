@@ -56,8 +56,6 @@ app.post("/account", (request, response) => {
     return response.status(201).send();
 });
 
-// app.use(verifyIfExistsAccountCPF);
-
 app.get("/statement", verifyIfExistsAccountCPF, (request, response) => {
     const { customer } = request;
 
@@ -120,12 +118,29 @@ app.put("/account", verifyIfExistsAccountCPF, (request, response) => {
     customer.name = name;
 
     return response.status(201).send();
-})
+});
 
 app.get("/account", verifyIfExistsAccountCPF, (request, response) => {
     const { customer } = request;
 
     return response.json(customer);
-})
+});
+
+app.delete("/account", verifyIfExistsAccountCPF, (request, response) => {
+    const { customer } = request;
+
+    // splice
+    customers.splice(customer, 1);
+
+    return response.status(200).json(customers);
+});
+
+app.get("/balance", verifyIfExistsAccountCPF, (request, response) => {
+    const { customer } = request;
+
+    const balance = getBalance(customer.statement);
+
+    return response.json(balance);
+});
 
 app.listen(3333);
