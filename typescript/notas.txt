@@ -1,0 +1,5 @@
+- TYPESCRIPT
+  + Linguagem open-source da microsoft (open-source quer dizer que é aberto para a comunidade cooperar)
+  + Superset do JavaScript (tem algumas melhorias e funcionalidades a mais em relação ao JS)
+  + É de tipagem estática (não da pra alterar o tipo dela depois que ela é declarada)
+  
