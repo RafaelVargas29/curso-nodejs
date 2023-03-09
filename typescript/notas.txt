@@ -2,4 +2,16 @@
   + Linguagem open-source da microsoft (open-source quer dizer que é aberto para a comunidade cooperar)
   + Superset do JavaScript (tem algumas melhorias e funcionalidades a mais em relação ao JS)
   + É de tipagem estática (não da pra alterar o tipo dela depois que ela é declarada)
+  + Só é usado em ambiente de desenvolvimento
   
+  CRIANDO PROJETO TYPESCRIPT
+  + npm/yarn init -y : Cria um package.json
+  + npm/yarn add express
+  + npm/yarn add @types/express -D : instala os tipos de uma determinada biblioteca (nesse caso, a do express)
+  + npm/yarn add typescript -D : instala as dependências do typescript
+  + npm/yarn tsc --init : inicializa o typescript (cria o arquivo tsconfig.json)
+  + yarn tsc : tranforma o código TS e JS e cria uma cópia
+
+  DICAS 
+  + No arquivo tsconfig.json, descomentar a linha "outDir" e colocar "ouDir": "./dist"
+  + Quando der o comando 'yarn tsc', irá criar automaticamente a pasta dist
