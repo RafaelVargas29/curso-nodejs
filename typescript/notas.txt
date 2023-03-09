@@ -15,3 +15,9 @@
   DICAS 
   + No arquivo tsconfig.json, descomentar a linha "outDir" e colocar "ouDir": "./dist"
   + Quando der o comando 'yarn tsc', irá criar automaticamente a pasta dist
+
+  PARÂMETROS OPCIONAIS
+  + Para definir um parâmetro como opcional, basta colocar '?' na frente do mesmo
+  + Exemplo:  duration?: number; 
+  + Caso o valor não seja informado, é possível determinar um valor padrão
+  + Exemplo: duration = 8
