@@ -7,7 +7,7 @@
   CRIANDO PROJETO TYPESCRIPT
   + npm/yarn init -y : Cria um package.json
   + npm/yarn add express
-  + npm/yarn add @types/express -D : instala os tipos de uma determinada biblioteca (nesse caso, a do express)
+  + npm/yarn add @types/express -D : instala os tipos de uma determinada biblioteca (nesse caso, a do express), Serve para auto-complete da funções de determinado pacote
   + npm/yarn add typescript -D : instala as dependências do typescript
   + npm/yarn tsc --init : inicializa o typescript (cria o arquivo tsconfig.json)
   + yarn tsc : tranforma o código TS e JS e cria uma cópia

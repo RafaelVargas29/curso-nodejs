@@ -1,0 +1,24 @@
+--------------------------------------------------ESLINT--------------------------------------------------
+- COMANDOS
+  + yarn add eslint@^7.21.0 -D : Instala o ESLint como dependência de desenvolvimento do projeto 
+  + yarn eslint --init : Inicianliza o ESLint no projeto 
+  + yarn add prettier eslint-config-prettier eslint-plugin-prettier -D : Esse comando vai adicionar 3 dependências que serão as responsáveis por fazer a formatação do código e também integrar o Prettier com o ESLint.
+  + yarn add -D @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest eslint-plugin-import@^2.22.1 @typescript-eslint/parser@latest : adiciona manualmente as dependências do ESLint
+  + yarn add -D eslint-plugin-import-helpers eslint-import-resolver-typescript : plugin que irá nos auxiliar a organizar a ordem dos imports dentro dos arquivos e outro para permitir importações de arquivos TypeScript sem que precisemos passar a extensão do arquivo
+
+--------------------------------------------------PRETTIER--------------------------------------------------
+  - COMANDOS
+    + yarn add prettier eslint-config-prettier eslint-plugin-prettier -D : instala os pacotes no projeto. Esse comando vai adicionar 3 dependências que serão as responsáveis por fazer a formatação do código e também integrar o Prettier com o ESLint.
+--------------------------------------------------------------------------------------------------------------
+- ESLINT E PRETTIER
+  + Servem para padronização de código
+  + Permite com que sejam criadas regras para a escrita do código
+--------------------------------------------------------------------------------------------------------------
+
+- COMANDOS
+  + yarn add ts-node-dev -D : Converte o TypeScript para Javascript automaticamente no ambiente de desenvolvimento, auxiliando na hora de rodar o serviço
+  + Para a biblioteca acima surtir efeito, é preciso ir do arquivo package.json e adicionar o seguinte script: "scripts": {
+    "dev": "ts-node-dev src/server.ts"
+  }
+  + yarn dev : Roda o servidor após ter realizado os passo acima 
+  + No tsconfig.json, sesabilitar a linha "strict": true
